@@ -37,6 +37,24 @@
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.08);
             border-left: 4px solid #0066cc;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .proyecto-imagen {
+            flex: 0 0 300px;
+        }
+        .proyecto-imagen img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            transition: transform 0.3s;
+        }
+        .proyecto-imagen img:hover {
+            transform: scale(1.03);
+        }
+        .proyecto-contenido {
+            flex: 1;
         }
         .proyecto h3 {
             margin-top: 0;
@@ -57,9 +75,48 @@
             border-top: 1px solid #eee;
             font-size: 0.9em;
         }
+        .badge-ai {
+            background: #7c3aed;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .enlaces {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .btn-video {
+            background: #2563eb;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .btn-social {
+            background: #7c3aed;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .btn-video:hover, .btn-social:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
         @media (max-width: 768px) {
             .habilidades {
                 columns: 1;
+            }
+            .proyecto {
+                flex-direction: column;
+            }
+            .proyecto-imagen {
+                width: 100%;
             }
         }
     </style>
@@ -91,102 +148,112 @@
         <h2>Proyectos Destacados</h2>
         
         <div class="proyecto">
-            <h3>ASICGenesis.io</h3>
-            <p><strong>Animación y edición de piezas promocionales</strong> para la colección NFT de Bitcoin. Desarrollo de motion graphics y secuencias audiovisuales para plataforma blockchain.</p>
-            <a href="https://drive.google.com/drive/folders/1apfWPAS0gt8qi2mIlYwb4UI0_P9FJbUX" target="_blank">Ver material promocional</a>
+            <div class="proyecto-imagen">
+                <img src="assets/img/asicgenesis-preview.png" alt="Teasers para ASICGenesis.io">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">NFT Bitcoin</span>
+                <h3>ASICGenesis.io</h3>
+                <p><strong>Animación y edición de piezas promocionales</strong> para la colección NFT de Bitcoin. Desarrollo de motion graphics y secuencias audiovisuales para plataforma blockchain.</p>
+                <div class="enlaces">
+                    <a href="https://drive.google.com/drive/folders/1apfWPAS0gt8qi2mIlYwb4UI0_P9FJbUX" target="_blank" class="btn-video">Ver material promocional</a>
+                </div>
+            </div>
         </div>
         
         <div class="proyecto">
-            <h3>"Mala" - Tino El Pingüino</h3>
-            <p><strong>Visuales generativos audiorreactivos</strong> para videoclip musical. Creación de elementos visuales sincronizados con el audio usando técnicas de generative art.</p>
-            <a href="https://www.youtube.com/watch?v=oDnk41N05qw" target="_blank">Ver en YouTube</a>
+            <div class="proyecto-imagen">
+                <img src="assets/img/mala-visuales.png" alt="Visuales para 'Mala'">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Audio-reactivo</span>
+                <h3>"Mala" - Tino El Pingüino</h3>
+                <p><strong>Visuales generativos audiorreactivos</strong> para videoclip musical. Creación de elementos visuales sincronizados con el audio usando técnicas de generative art.</p>
+                <div class="enlaces">
+                    <a href="https://www.youtube.com/watch?v=oDnk41N05qw" target="_blank" class="btn-video">Ver en YouTube</a>
+                </div>
+            </div>
         </div>
         
         <div class="proyecto">
-            <h3>Videoensayo académico</h3>
-            <p><strong>Montaje audiovisual</strong> para el capítulo «13 secrets about memebreaking» de Gustavo Gómez-Mejía publicado en el <em>Critical Meme Reader III</em> (Institute of Network Cultures, Ámsterdam).</p>
-            <a href="https://www.youtube.com/watch?v=FfSMMGt9m_c" target="_blank">Ver videoensayo</a>
+            <div class="proyecto-imagen">
+                <img src="assets/img/videoensayo-academico.png" alt="Videoensayo académico">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Investigación</span>
+                <h3>Videoensayo académico</h3>
+                <p><strong>Montaje audiovisual</strong> para el capítulo «13 secrets about memebreaking» de Gustavo Gómez-Mejía publicado en el <em>Critical Meme Reader III</em> (Institute of Network Cultures, Ámsterdam).</p>
+                <div class="enlaces">
+                    <a href="https://www.youtube.com/watch?v=FfSMMGt9m_c" target="_blank" class="btn-video">Ver videoensayo</a>
+                </div>
+            </div>
         </div>
-        <section class="proyectos-personales">
-    <h2>Proyectos Personales <small>(Exploraciones técnicas/experimentales)</small></h2>
-    
-    <div class="proyecto">
-        <span class="badge-ai">TouchDesigner + Datamoshing</span>
-        <h3>MEME_DISTORSION</h3>
-        <p>Distorsión glitch de memes en tiempo real usando <strong>blob tracking y datamoshing</strong>. Producción integral: diseño sonoro, captura de movimiento y montaje experimental.</p>
-        <div class="enlaces">
-            <a href="https://youtu.be/xrzSnIoQUzs" target="_blank" class="btn-video">Ver video</a>
-        </div>
-    </div>
-    
-    <div class="proyecto">
-        <span class="badge-ai">Stable Diffusion + Deforum</span>
-        <h3>(Cortometraje AI)</h3>
-        <p>Narrativa visual generada completamente con <strong>IA generativa</strong>. Montaje en premiere.</p>
-        <div class="enlaces">
-            <a href="https://drive.google.com/file/d/1vrgLt0OOOuYrzb7AFaVAO379BZ32etqk/view" target="_blank" class="btn-video">Ver en Google Drive</a>
-        </div>
-    </div>
-    
-    <div class="proyecto">
-        <span class="badge-ai">Point Clouds</span>
-        <h3>PUNTOS EN FUGACIDAD</h3>
-        <p>Serie de visualizaciones 3D usando <strong>nubes de puntos dinámicas</strong>. Experimentos con captura volumétrica y reconstrucción espacial.</p>
-        <div class="enlaces">
-            <a href="https://youtu.be/nzHznVT1HV4" target="_blank" class="btn-video">Parte 1</a>
-            <a href="https://youtu.be/7OMX2QJ9H90" target="_blank" class="btn-video">Parte 2</a>
-        </div>
-    </div>
-    
-    <div class="proyecto">
-        <span class="badge-ai">Workshops</span>
-        <h3>EDICIÓN EXPERIMENTAL</h3>
-        <p>Talleres intercontinentales sobre <strong>técnicas de edición</strong> (móvil/desktop) combinando herramientas digitales con teoría contemporánea. 8 ediciones impartidas.</p>
-        <div class="enlaces">
-            <a href="https://www.instagram.com/antimemoria_____/" target="_blank" class="btn-social">Ver en Instagram</a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<style>
-    .proyectos-personales {
-        margin-top: 3rem;
-    }
-    .proyectos-personales h2 small {
-        font-size: 0.8em;
-        color: #64748b;
-        font-weight: normal;
-    }
-    .enlaces {
-        margin-top: 15px;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-    .btn-video {
-        background: #2563eb;
-        color: white;
-        padding: 6px 12px;
-        border-radius: 4px;
-        font-size: 0.9em;
-    }
-    .btn-social {
-        background: #7c3aed;
-        color: white;
-        padding: 6px 12px;
-        border-radius: 4px;
-        font-size: 0.9em;
-    }
-    .btn-video:hover, .btn-social:hover {
-        opacity: 0.9;
-        text-decoration: none;
-    }
-</style>
+    <section class="proyectos-personales">
+        <h2>Proyectos Personales <small>(Exploraciones técnicas/experimentales)</small></h2>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/meme-distorsion.png" alt="MEME_DISTORSION">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">TouchDesigner + Datamoshing</span>
+                <h3>MEME_DISTORSION</h3>
+                <p>Distorsión glitch de memes en tiempo real usando <strong>blob tracking y datamoshing</strong>. Producción integral: diseño sonoro, captura de movimiento y montaje experimental.</p>
+                <div class="enlaces">
+                    <a href="https://youtu.be/xrzSnIoQUzs" target="_blank" class="btn-video">Ver video</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/oniria-ai.png" alt="Cortometraje AI">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Stable Diffusion + Deforum</span>
+                <h3>ONIRIA (Cortometraje AI)</h3>
+                <p>Narrativa visual generada completamente con <strong>IA generativa</strong>. Montaje en Premiere con técnicas avanzadas de postproducción.</p>
+                <div class="enlaces">
+                    <a href="https://drive.google.com/file/d/1vrgLt0OOOuYrzb7AFaVAO379BZ32etqk/view" target="_blank" class="btn-video">Ver en Google Drive</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/pointcloud.png" alt="PUNTOS EN FUGACIDAD">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Point Clouds</span>
+                <h3>PUNTOS EN FUGACIDAD</h3>
+                <p>Serie de visualizaciones 3D usando <strong>nubes de puntos dinámicas</strong>. Experimentos con captura volumétrica y reconstrucción espacial.</p>
+                <div class="enlaces">
+                    <a href="https://youtu.be/nzHznVT1HV4" target="_blank" class="btn-video">Parte 1</a>
+                    <a href="https://youtu.be/7OMX2QJ9H90" target="_blank" class="btn-video">Parte 2</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="https://via.placeholder.com/600x400/7c3aed/ffffff?text=Taller+Edición" alt="Taller de edición experimental">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Workshops</span>
+                <h3>EDICIÓN EXPERIMENTAL</h3>
+                <p>Talleres intercontinentales sobre <strong>técnicas de edición</strong> (móvil/desktop) combinando herramientas digitales con teoría contemporánea. 8 ediciones impartidas.</p>
+                <div class="enlaces">
+                    <a href="https://www.instagram.com/antimemoria_____/" target="_blank" class="btn-social">Ver en Instagram</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
         <h3>Contacto</h3>
-        <p>Email: <a href="antimemoriacolectivx@gmail.com">antimemoriacolectivx@gmail.com</a></p>
+        <p>Email: <a href="mailto:antimemoriacolectivx@gmail.com">antimemoriacolectivx@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/antimemoria" target="_blank">antimemoria</a></p>
     </footer>
 </body>
