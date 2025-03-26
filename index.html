@@ -6,60 +6,187 @@
     <title>Ervin Nanco - Editor Audiovisual</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 25px;
             color: #333;
         }
         header {
             text-align: center;
             margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .sobre-mi {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .habilidades {
+            columns: 2;
+            margin-top: 15px;
         }
         .proyecto {
-            background: #f5f5f5;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-left: 4px solid #0066cc;
+        }
+        .proyecto h3 {
+            margin-top: 0;
+            color: #0066cc;
         }
         a {
             color: #0066cc;
             text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .habilidades {
+                columns: 1;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Ervin Nanco Colula</h1>
-        <p>Editor Audiovisual | </p>
+        <p>Editor Audiovisual | Especialista en IA Generativa</p>
     </header>
+
+    <section class="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p><strong>Editor Audiovisual</strong> con experiencia en edición de video y manejo avanzado de inteligencia artificial para generación de contenido multimedia.</p>
+        
+        <div class="habilidades">
+            <h3>Habilidades técnicas:</h3>
+            <ul>
+                <li>Edición profesional (Premiere Pro, capcut, kinemaster)</li>
+                <li>Generación con IA: Stable Diffusion, Midjourney, Deforum, ComfyUI, Runway</li>
+                <li>Gestión de proyectos multimedia</li>
+                <li>Gestión de redes sociales</li>
+                <li>Investigación digital</li>
+                <li>Paquetería Office</li>
+            </ul>
+        </div>
+    </section>
 
     <section>
         <h2>Proyectos Destacados</h2>
         
         <div class="proyecto">
             <h3>ASICGenesis.io</h3>
-            <p>Animación y edición de piezas promocionales para colección NFT de Bitcoin.</p>
-            <a href="https://drive.google.com/drive/folders/1apfWPAS0gt8qi2mIlYwb4UI0_P9FJbUX" target="_blank">Ver proyecto</a>
+            <p><strong>Animación y edición de piezas promocionales</strong> para la colección NFT de Bitcoin. Desarrollo de motion graphics y secuencias audiovisuales para plataforma blockchain.</p>
+            <a href="https://drive.google.com/drive/folders/1apfWPAS0gt8qi2mIlYwb4UI0_P9FJbUX" target="_blank">Ver material promocional</a>
         </div>
         
         <div class="proyecto">
             <h3>"Mala" - Tino El Pingüino</h3>
-            <p>Visuales generativos audiorreactivos para videoclip musical.</p>
+            <p><strong>Visuales generativos audiorreactivos</strong> para videoclip musical. Creación de elementos visuales sincronizados con el audio usando técnicas de generative art.</p>
             <a href="https://www.youtube.com/watch?v=oDnk41N05qw" target="_blank">Ver en YouTube</a>
         </div>
         
         <div class="proyecto">
             <h3>Videoensayo académico</h3>
-            <p>Montaje para «13 secrets about memebreaking» de Gustavo Gómez-Mejía (Institute of Network Cultures, Ámsterdam).</p>
-            <a href="https://www.youtube.com/watch?v=FfSMMGt9m_c" target="_blank">Ver video</a>
+            <p><strong>Montaje audiovisual</strong> para el capítulo «13 secrets about memebreaking» de Gustavo Gómez-Mejía publicado en el <em>Critical Meme Reader III</em> (Institute of Network Cultures, Ámsterdam).</p>
+            <a href="https://www.youtube.com/watch?v=FfSMMGt9m_c" target="_blank">Ver videoensayo</a>
         </div>
+        <section class="proyectos-personales">
+    <h2>Proyectos Personales <small>(Exploraciones técnicas/experimentales)</small></h2>
+    
+    <div class="proyecto">
+        <span class="badge-ai">TouchDesigner + Datamoshing</span>
+        <h3>MEME_DISTORSION</h3>
+        <p>Distorsión glitch de memes en tiempo real usando <strong>blob tracking y datamoshing</strong>. Producción integral: diseño sonoro, captura de movimiento y montaje experimental.</p>
+        <div class="enlaces">
+            <a href="https://youtu.be/xrzSnIoQUzs" target="_blank" class="btn-video">Ver video</a>
+        </div>
+    </div>
+    
+    <div class="proyecto">
+        <span class="badge-ai">Stable Diffusion + Deforum</span>
+        <h3>(Cortometraje AI)</h3>
+        <p>Narrativa visual generada completamente con <strong>IA generativa</strong>. Montaje en premiere.</p>
+        <div class="enlaces">
+            <a href="https://drive.google.com/file/d/1vrgLt0OOOuYrzb7AFaVAO379BZ32etqk/view" target="_blank" class="btn-video">Ver en Google Drive</a>
+        </div>
+    </div>
+    
+    <div class="proyecto">
+        <span class="badge-ai">Point Clouds</span>
+        <h3>PUNTOS EN FUGACIDAD</h3>
+        <p>Serie de visualizaciones 3D usando <strong>nubes de puntos dinámicas</strong>. Experimentos con captura volumétrica y reconstrucción espacial.</p>
+        <div class="enlaces">
+            <a href="https://youtu.be/nzHznVT1HV4" target="_blank" class="btn-video">Parte 1</a>
+            <a href="https://youtu.be/7OMX2QJ9H90" target="_blank" class="btn-video">Parte 2</a>
+        </div>
+    </div>
+    
+    <div class="proyecto">
+        <span class="badge-ai">Workshops</span>
+        <h3>EDICIÓN EXPERIMENTAL</h3>
+        <p>Talleres intercontinentales sobre <strong>técnicas de edición</strong> (móvil/desktop) combinando herramientas digitales con teoría contemporánea. 8 ediciones impartidas.</p>
+        <div class="enlaces">
+            <a href="https://www.instagram.com/antimemoria_____/" target="_blank" class="btn-social">Ver en Instagram</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .proyectos-personales {
+        margin-top: 3rem;
+    }
+    .proyectos-personales h2 small {
+        font-size: 0.8em;
+        color: #64748b;
+        font-weight: normal;
+    }
+    .enlaces {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .btn-video {
+        background: #2563eb;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 0.9em;
+    }
+    .btn-social {
+        background: #7c3aed;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 0.9em;
+    }
+    .btn-video:hover, .btn-social:hover {
+        opacity: 0.9;
+        text-decoration: none;
+    }
+</style>
     </section>
 
     <footer>
         <h3>Contacto</h3>
-        <p>Email: <a href="antimemoriacolectivx@gmail.com">tuemail@ejemplo.com</a></p>
+        <p>Email: <a href="antimemoriacolectivx@gmail.com">antimemoriacolectivx@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/antimemoria" target="_blank">antimemoria</a></p>
     </footer>
 </body>
