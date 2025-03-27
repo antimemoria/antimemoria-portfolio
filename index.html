@@ -4,134 +4,286 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ervin Nanco - Editor Audiovisual</title>
-    <!-- Meta Tags SEO -->
-    <meta name="description" content="Portafolio de Ervin Nanco - Editor Audiovisual especializado en IA generativa y edición de video.">
-    <meta name="keywords" content="editor audiovisual, IA generativa, Stable Diffusion, Premiere Pro, motion graphics">
-    
-    <!-- ScrollReveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
     <style>
-        :root {
-            --azul-metalico: #0066cc;
-            --azul-electrico: #00aaff;
-            --fondo-oscuro: #121212;
-            --texto-claro: #e0e0e0;
-            --card-oscura: #1e1e1e;
-        }
-        
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             max-width: 900px;
             margin: 0 auto;
             padding: 25px;
-            background-color: var(--fondo-oscuro);
-            color: var(--texto-claro);
+            color: #333;
         }
-        
-        /* Header con gradiente azul metálico */
         header {
-            background: linear-gradient(135deg, var(--azul-metalico) 0%, #2a0066 100%);
-            color: white;
-            padding: 40px 20px;
-            border-radius: 8px;
-            margin-bottom: 40px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 102, 204, 0.3);
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
         }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        .sobre-mi {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
-        
-        /* Efecto hover en tarjetas de proyectos */
+        .habilidades {
+            columns: 2;
+            margin-top: 15px;
+        }
         .proyecto {
-            background: var(--card-oscura);
+            background: white;
             padding: 20px;
             margin-bottom: 25px;
             border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-            border-left: 4px solid var(--azul-electrico);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-left: 4px solid #0066cc;
             display: flex;
             gap: 20px;
             align-items: center;
-            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .proyecto:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 170, 255, 0.2);
+        .proyecto-imagen {
+            flex: 0 0 300px;
         }
-        
-        /* Botones con brillo azul */
-        .btn-video, .btn-social {
-            transition: all 0.3s;
+        .proyecto-imagen img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            transition: transform 0.3s;
+        }
+        .proyecto-imagen img:hover {
+            transform: scale(1.03);
+        }
+        .proyecto-contenido {
+            flex: 1;
+        }
+        .proyecto h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+        }
+        .badge-ai {
+            background: #7c3aed;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .enlaces {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .btn-video {
+            background: #2563eb;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .btn-social {
+            background: #7c3aed;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
         }
         .btn-video:hover, .btn-social:hover {
-            filter: brightness(1.2);
-            box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
-        }
-        
-        /* Barra de navegación oscura */
-        .menu {
-            background: rgba(30, 30, 30, 0.8);
-            backdrop-filter: blur(10px);
-            padding: 15px 0;
-            text-align: center;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            border: 1px solid rgba(0, 102, 204, 0.3);
-        }
-        .menu a {
-            margin: 0 10px;
-            padding: 5px 15px;
-            color: var(--azul-electrico);
-            border-radius: 20px;
-            transition: all 0.3s;
-        }
-        .menu a:hover {
-            background: rgba(0, 170, 255, 0.1);
+            opacity: 0.9;
             text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .habilidades {
+                columns: 1;
+            }
+            .proyecto {
+                flex-direction: column;
+            }
+            .proyecto-imagen {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header con gradiente -->
     <header>
         <h1>Ervin Nanco Colula</h1>
         <p>Editor Audiovisual</p>
     </header>
-    
-    <!-- Barra de navegación -->
-    <nav class="menu">
-        <a href="#sobre-mi">Sobre Mí</a>
-        <a href="#proyectos-destacados">Proyectos</a>
-        <a href="#exploraciones">Exploraciones</a>
-        <a href="#presentaciones">Presentaciones</a>
-        <a href="#workshop">Workshop</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-    
-    <!-- Secciones (añade tus contenidos existentes aquí) -->
-    <section id="sobre-mi" class="sobre-mi">
-        ...
-    </section>
-    
-    <!-- Script para ScrollReveal -->
-    <script>
-        ScrollReveal().reveal('.proyecto', {
-            delay: 200,
-            distance: '20px',
-            origin: 'bottom',
-            interval: 100
-        });
+
+    <section class="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p><strong>Editor Audiovisual</strong> con experiencia en edición de video y manejo de inteligencia artificial para generación de contenido multimedia.</p>
         
-        ScrollReveal().reveal('header', {
-            delay: 100,
-            duration: 1500,
-            opacity: 0,
-            scale: 0.9
-        });
-    </script>
+        <div class="habilidades">
+            <h3>Habilidades técnicas:</h3>
+            <ul>
+                <li>Edición profesional (Premiere Pro, capcut, kinemaster)</li>
+                <li>Generación con IA: Stable Diffusion, Midjourney, Deforum, ComfyUI, Runway</li>
+                <li>Gestión de proyectos multimedia</li>
+                <li>Gestión de redes sociales</li>
+                <li>Investigación digital</li>
+                <li>Paquetería Office</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Proyectos Destacados</h2>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/asicgenesis-preview.png" alt="Teasers para ASICGenesis.io">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">NFT Bitcoin</span>
+                <h3>ASICGenesis.io</h3>
+                <p><strong>Animación y edición de teasers</strong> para la colección NFT Bitcoin de asicgenesis.io.</p>
+                <div class="enlaces">
+                    <a href="https://drive.google.com/drive/folders/1apfWPAS0gt8qi2mIlYwb4UI0_P9FJbUX" target="_blank" class="btn-video">Ver material promocional</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/mala-visuales.png" alt="Visuales para 'Mala'">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Audio-reactivo</span>
+                <h3>"Mala" - Tino El Pingüino</h3>
+                <p><strong>Visuales generativos audiorreactivos</strong> para videoclip musical. Creación de elementos visuales sincronizados con el audio usando técnicas de generative art.</p>
+                <div class="enlaces">
+                    <a href="https://www.youtube.com/watch?v=oDnk41N05qw" target="_blank" class="btn-video">Ver en YouTube</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/videoensayo-academico.png" alt="Videoensayo académico">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Investigación</span>
+                <h3>Videoensayo académico</h3>
+                <p><strong>Montaje audiovisual</strong> para el capítulo «13 secrets about memebreaking» de Gustavo Gómez-Mejía publicado en el <em>Critical Meme Reader III</em> (Institute of Network Cultures, Ámsterdam).</p>
+                <div class="enlaces">
+                    <a href="https://www.youtube.com/watch?v=FfSMMGt9m_c" target="_blank" class="btn-video">Ver videoensayo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="proyectos-experimentales">
+        <h2>Exploraciones Técnicas</h2>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/meme-distorsion.png" alt="MEME_DISTORSION">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">TouchDesigner + Datamoshing</span>
+                <h3>MEME_DISTORSION</h3>
+                <p>Distorsión glitch de memes utilizando <strong>blob tracking, datamoshing y delay machine</strong>. Producción integral: diseño sonoro, captura de movimiento y montaje experimental.</p>
+                <div class="enlaces">
+                    <a href="https://youtu.be/xrzSnIoQUzs" target="_blank" class="btn-video">Ver video</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/oniria-ai.png" alt="Cortometraje AI">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Stable Diffusion + Deforum</span>
+                <h3>Terradicación (Cortometraje AI)</h3>
+                <p>Narrativa visual generada completamente con <strong>IA generativa</strong>. Montaje en Premiere.</p>
+                <div class="enlaces">
+                    <a href="https://drive.google.com/file/d/1vrgLt0OOOuYrzb7AFaVAO379BZ32etqk/view" target="_blank" class="btn-video">Ver en Google Drive</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/pointcloud.png" alt="PUNTOS EN FUGACIDAD">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Point Clouds</span>
+                <h3>PUNTOS EN FUGACIDAD</h3>
+                <p>Serie de visualizaciones 3D usando <strong>pointcloud</strong>. Experimentos con captura volumétrica y reconstrucción espacial.</p>
+                <div class="enlaces">
+                    <a href="https://youtu.be/nzHznVT1HV4" target="_blank" class="btn-video">Parte 1</a>
+                    <a href="https://youtu.be/7OMX2QJ9H90" target="_blank" class="btn-video">Parte 2</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="presentaciones">
+        <h2>Presentaciones</h2>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/performance.HEIC" alt="Presentaciones de antimemoria_____">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Arte y Memes</span>
+                <h3>antimemoria_____</h3>
+                <p><strong>Exhibiciones y participaciones destacadas:</strong></p>
+                <ul>
+                    <li><a href="https://inba.gob.mx/prensa/20140/la-sala-de-arte-publico-siqueiros-recibe-la-primera-muestra-de-memes-como-fenomeno-de-arte-y-comunicacion" target="_blank">Sala de Arte Público Siqueiros</a> (Muestra colectiva)</li>
+                    <li><a href="https://ccemx.org/evento/festival-kerouac-2024/" target="_blank">Centro Cultural de España en México (CCEMX)</a></li>
+                    <li><a href="https://www.facebook.com/nochedemuseos/posts/cu%C3%A1ntos-memes-ves-al-d%C3%ADa-nochedemuseosrecomienda-que-asistas-a-la-videoinstalaci/468486998681624/" target="_blank">El Rule, Laboratorio de Tecnologías Creativas</a></li>
+                    <li><a href="https://centroculturadigital.mx/actividad/xxiii-festin-audiovisual-la-yerbabuena-red-audiovisual" target="_blank">Centro de Cultura Digital (CCD)</a> (Performance audiovisual)</li>
+                </ul>
+                <div class="enlaces">
+                    <a href="https://www.instagram.com/antimemoria_____/" target="_blank" class="btn-social">Instagram Proyecto</a>
+                    <a href="https://www.instagram.com/glitch_____dreamer/" target="_blank" class="btn-social">IA Generativa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workshop">
+        <h2>Workshop</h2>
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/taller-workshop.jpg" alt="Workshop de Experimentación Visual">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Net-Art & Edición</span>
+                <h3>Workshop de Experimentación Visual</h3>
+                <p><strong>Creador e Instructor</strong> del taller teórico-práctico sobre net-art y edición de imagen. <em>8 ediciones impartidas intercontinentalmente.</em></p>
+                <div class="enlaces">
+                    <a href="https://drive.google.com/file/d/1VwqnJgwPPBhWUHPSqvXfLU5Zyq6uLBza/view?usp=drive_link" target="_blank" class="btn-video">Ver metodología</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Contacto</h3>
+        <p>Email: <a href="mailto:antimemoriacolectivx@gmail.com">antimemoriacolectivx@gmail.com</a></p>
+        <p>Teléfono: <a href="tel:+5215626571695">+52 1 5626 5716 95</a></p>
+        <p>GitHub: <a href="https://github.com/antimemoria" target="_blank">antimemoria</a></p>
+    </footer>
 </body>
 </html>
