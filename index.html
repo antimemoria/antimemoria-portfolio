@@ -1,1 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ervin Nanco - Editor Audiovisual</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 25px;
+            color: #333;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .sobre-mi {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .habilidades {
+            columns: 2;
+            margin-top: 15px;
+        }
+        
+        .proyecto {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-left: 4px solid #0066cc;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .proyecto-imagen {
+            flex: 0 0 300px;
+        }
+        
+        .proyecto-imagen img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            transition: transform 0.3s;
+        }
+        
+        .proyecto-imagen img:hover {
+            transform: scale(1.03);
+        }
+        
+        .proyecto-contenido {
+            flex: 1;
+        }
+        
+        .proyecto h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+        }
+        
+        .badge-ai {
+            background: #7c3aed;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .enlaces {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-video {
+            background: #2563eb;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .btn-social {
+            background: #7c3aed;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .btn-video:hover, .btn-social:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .habilidades {
+                columns: 1;
+            }
+            .proyecto {
+                flex-direction: column;
+            }
+            .proyecto-imagen {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
 
+<body>
+    <header>
+        <h1>Ervin Nanco Colula</h1>
+        <p>Editor Audiovisual</p>
+    </header>
+
+    <section class="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p><strong>Editor Audiovisual</strong> con experiencia en edición de video y manejo de inteligencia artificial para generación de contenido multimedia.</p>
+
+        <div class="habilidades">
+            <h3>Habilidades técnicas:</h3>
+            <ul>
+                <li>Edición profesional (Premiere Pro, capcut, kinemaster)</li>
+                <li>Edición profesional (Premiere Pro, Touchdesigner, PS, Canva, capcut, kinemaster)</li>
+                <li>Generación con IA: Stable Diffusion, Midjourney, Deforum, ComfyUI, Runway</li>
+                <li>Gestión de proyectos multimedia</li>
+                <li>Gestión de redes sociales</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="proyectos-comerciales">
+        <h2>Proyectos Comerciales</h2>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/asicgenesis.png" alt="ASICGenesis NFT">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">NFT Animation</span>
+                <h3>ASICGenesis.io</h3>
+                <p><strong>Animación y edición de teasers</strong> para la colección NFT Bitcoin de asicgenesis.io.</p>
+                <div class="enlaces">
+                    <a href="https://asicgenesis.io/" target="_blank" class="btn-video">Ver material promocional</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/mala-visuales.png" alt="Visuales para 'Mala'">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Audio-reactivo</span>
+                <h3>"Mala" - Tino El Pingüino</h3>
+                <p><strong>Visuales generativos audiorreactivos</strong> para videoclip musical. Creación de elementos visuales sincronizados con el audio usando técnicas de generative art.</p>
+                <div class="enlaces">
+                    <a href="https://www.youtube.com/watch?v=oDnk41N05qw" target="_blank" class="btn-video">Ver en YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/videoensayo-academico.png" alt="Videoensayo académico">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Investigación</span>
+                <h3>Videoensayo académico</h3>
+                <p><strong>Montaje audiovisual</strong> para el capítulo «13 secrets about memebreaking» de Gustavo Gómez-Mejía publicado en el <em>Critical Meme Reader III</em> (Institute of Network Cultures, Ámsterdam).</p>
+                <div class="enlaces">
+                    <a href="https://www.youtube.com/watch?v=FfSMMGt9m_c" target="_blank" class="btn-video">Ver videoensayo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="proyectos-experimentales">
+        <h2>Exploraciones Técnicas</h2>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/meme-distorsion.png" alt="MEME_DISTORSION">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">TouchDesigner + Datamoshing</span>
+                <h3>MEME_DISTORSION</h3>
+                <p>Distorsión glitch de memes utilizando <strong>blob tracking, datamoshing y delay machine</strong>. Producción integral: diseño sonoro, captura de movimiento y montaje experimental.</p>
+                <div class="enlaces">
+                    <a href="https://youtu.be/xrzSnIoQUzs" target="_blank" class="btn-video">Ver video</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/oniria-ai.png" alt="Cortometraje AI">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Stable Diffusion + Deforum</span>
+                <h3>Terradicación (Cortometraje AI)</h3>
+                <p>Narrativa visual generada completamente con <strong>IA generativa</strong>. Montaje en Premiere.</p>
+                <div class="enlaces">
+                    <a href="https://drive.google.com/file/d/1vrgLt0OOOuYrzb7AFaVAO379BZ32etqk/view" target="_blank" class="btn-video">Ver en Google Drive</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/pointcloud.png" alt="PUNTOS EN FUGACIDAD">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Point Clouds</span>
+                <h3>PUNTOS EN FUGACIDAD</h3>
+                <p>Serie de visualizaciones 3D usando <strong>pointcloud</strong>. Experimentos con captura volumétrica y reconstrucción espacial.</p>
+                <div class="enlaces">
+                    <a href="https://youtu.be/nzHznVT1HV4" target="_blank" class="btn-video">Parte 1</a>
+                    <a href="https://youtu.be/7OMX2QJ9H90" target="_blank" class="btn-video">Parte 2</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="presentaciones">
+        <h2>Presentaciones</h2>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/performances.png" alt="Presentaciones de antimemoria_____">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Arte</span>
+                <h3>antimemoria_____</h3>
+                <p><strong>Exhibiciones y creación de contenido:</strong></p>
+                <ul>
+                    <li><a href="https://inba.gob.mx/prensa/20140/la-sala-de-arte-publico-siqueiros-recibe-la-primera-muestra-de-memes-como-fenomeno-de-arte-y-comunicacion" target="_blank">Sala de Arte Público Siqueiros</a> (Muestra colectiva)</li>
+                    <li><a href="https://ccemx.org/evento/festival-kerouac-2024/" target="_blank">Centro Cultural de España en México (CCEMX)</a></li>
+                    <li><a href="https://www.facebook.com/nochedemuseos/posts/cu%C3%A1ntos-memes-ves-al-d%C3%ADa-nochedemuseosrecomienda-que-asistas-a-la-videoinstalaci/468486998681624/" target="_blank">El Rule, Laboratorio de Tecnologías Creativas</a></li>
+                    <li><a href="https://centroculturadigital.mx/actividad/xxiii-festin-audiovisual-la-yerbabuena-red-audiovisual" target="_blank">Centro de Cultura Digital (CCD)</a> (Performance audiovisual)</li>
+                </ul>
+                <div class="enlaces">
+                    <a href="https://www.instagram.com/antimemoria_____/" target="_blank" class="btn-social">IG antimemoria</a>
+                    <a href="https://www.instagram.com/glitch_____dreamer/" target="_blank" class="btn-social">IG A.I</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workshop">
+        <h2>Workshop</h2>
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/antimemoria.jpg" alt="Workshop de Experimentación Visual">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Net-Art & Edición</span>
+                <h3>Workshop de Experimentación Visual</h3>
+                <p><strong>Creador e Instructor</strong> del taller teórico-práctico sobre net-art y edición de imagen. <em>8 ediciones impartidas intercontinentalmente.</em></p>
+                <div class="enlaces">
+                    <a href="https://drive.google.com/file/d/1VwqnJgwPPBhWUHPSqvXfLU5Zyq6uLBza/view?usp=drive_link" target="_blank" class="btn-video">Ver metodología</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Contacto</h3>
+        <p>Email: <a href="mailto:antimemoriacolectivx@gmail.com">antimemoriacolectivx@gmail.com</a></p>
+        <p>Teléfono: <a href="tel:+5215626571695">+52 1 5626 5716 95</a></p>
+        <p>GitHub: <a href="https://github.com/antimemoria" target="_blank">antimemoria</a></p>
+    </footer>
+</body>
+</html>
