@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ervin Nanco - Editor Audiovisual</title>
-    <!-- Agregamos Font Awesome para los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
@@ -131,37 +130,25 @@
             background: #4a5d6b;
         }
 
-        /* Nuevos estilos para los iconos de contacto */
-        .contacto-info {
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .contact-item {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 10px;
+            gap: 8px;
         }
 
-        .contacto-info i {
-            color: #68879b;
-            width: 20px;
-        }
-
-        .redes-sociales {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .redes-sociales a {
-            color: #e0e0e0;
+        .contact-icon {
             font-size: 1.2em;
-            transition: color 0.3s;
+            color: #8ab3cf;
         }
 
-        .redes-sociales a:hover {
-            color: #68879b;
-        }
-        
         @media (max-width: 768px) {
             .habilidades {
                 columns: 1;
@@ -177,27 +164,213 @@
 </head>
 
 <body>
-    <!-- Resto del código se mantiene igual hasta el footer -->
-    
+    <header>
+        <h1>Ervin Nanco Colula</h1>
+        <p>Editor Audiovisual</p>
+    </header>
+
+    <section class="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p><strong>Editor Audiovisual</strong> con experiencia en edición de video y manejo de inteligencia artificial para generación de contenido multimedia.</p>
+
+        <div class="habilidades">
+            <h3>Habilidades técnicas:</h3>
+            <ul>
+                <li>Edición profesional (Premiere Pro, Capcut, kinemaster)</li>
+                <li>Edición profesional (Premiere Pro, Touchdesigner, PS, Canva, Capcut, kinemaster)</li>
+                <li>Generación con IA: Stable Diffusion, Midjourney, Deforum, ComfyUI, Runway</li>
+                <li>Gestión de proyectos multimedia</li>
+                <li>Gestión de redes sociales</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="proyectos-comerciales">
+        <h2>Proyectos Comerciales</h2>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/asicgenesis-preview.png" alt="ASICGenesis NFT">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">NFT Animation</span>
+                <h3>ASICGenesis.io</h3>
+                <p><strong>Animación y edición de teasers</strong> para la colección NFT Bitcoin de asicgenesis.io.</p>
+                <div class="enlaces">
+                    <a href="https://asicgenesis.io/" target="_blank" class="btn-video">Ver material promocional</a>
+                    <a href="https://drive.google.com/drive/folders/1apfWPAS0gt8qi2mIlYwb4UI0_P9FJbUX" target="_blank" class="btn-video">Teaser</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/mala-visuales.png" alt="Visuales para 'Mala'">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Audio-reactivo</span>
+                <h3>"Mala" - Tino El Pingüino</h3>
+                <p><strong>Visuales generativos audiorreactivos</strong> para videoclip musical. Creación de elementos visuales sincronizados con el audio usando técnicas de generative art.</p>
+                <div class="enlaces">
+                    <a href="https://www.youtube.com/watch?v=oDnk41N05qw" target="_blank" class="btn-video">Ver en YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="creacion-digital">
+        <h2>Creación Digital</h2>
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/pink.jpg" alt="Diseños digitales">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Diseño Gráfico</span>
+                <h3>Trabajos con Photoshop e Illustrator</h3>
+                <p><strong>Diseños digitales</strong> realizados con herramientas profesionales de diseño gráfico.</p>
+                <div class="enlaces">
+                    <a href="https://drive.google.com/drive/folders/1qiLcC8Ax4rk8NkpU9gSam6bNaSVW34X6?usp=drive_link" target="_blank" class="btn-video">Diseños</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="presentaciones">
+        <h2>Presentaciones</h2>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/performances.png" alt="Presentaciones de antimemoria_____">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Arte</span>
+                <h3>antimemoria_____</h3>
+                <p><strong>Exhibiciones y creación de contenido:</strong></p>
+                <ul>
+                    <li><a href="https://inba.gob.mx/prensa/20140/la-sala-de-arte-publico-siqueiros-recibe-la-primera-muestra-de-memes-como-fenomeno-de-arte-y-comunicacion" target="_blank">Sala de Arte Público Siqueiros</a> (Muestra colectiva)</li>
+                    <li><a href="https://ccemx.org/evento/festival-kerouac-2024/" target="_blank">Centro Cultural de España en México (CCEMX)</a></li>
+                    <li><a href="https://www.facebook.com/nochedemuseos/posts/cu%C3%A1ntos-memes-ves-al-d%C3%ADa-nochedemuseosrecomienda-que-asistas-a-la-videoinstalaci/468486998681624/" target="_blank">El Rule, Laboratorio de Tecnologías Creativas</a></li>
+                    <li><a href="https://centroculturadigital.mx/actividad/xxiii-festin-audiovisual-la-yerbabuena-red-audiovisual" target="_blank">Centro de Cultura Digital (CCD)</a> (Performance audiovisual)</li>
+                </ul>
+                <div class="enlaces">
+                    <a href="https://www.instagram.com/antimemoria_____/" target="_blank" class="btn-social">IG antimemoria</a>
+                    <a href="https://www.instagram.com/glitch_____dreamer/" target="_blank" class="btn-social">IG A.I</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workshop">
+        <h2>Workshop</h2>
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/antimemoria.jpg" alt="Workshop de Experimentación Visual">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Net-Art & Edición</span>
+                <h3>Workshop de Experimentación Visual</h3>
+                <p><strong>Creador e Instructor</strong> del taller teórico-práctico sobre net-art y edición de imagen. <em>Impartido intercontinentalmente.</em></p>
+                <div class="enlaces">
+                    <a href="https://antimemoria.github.io/WORKSHOP-DE-EDICI-N-EXPERIMENTAL-Y-TEOR-A-POST-INTERNET/" target="_blank" class="btn-video">Ver proyectos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="proyectos-experimentales">
+        <h2>Exploraciones Técnicas</h2>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/cloud.png" alt="CLOUD-CRETE">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Colaboración Internacional</span>
+                <h3>CLOUD-CRETE</h3>
+                <p>Cloud-crete es una obra audiovisual que integra tecnología 3D, blobtrack, pointcloud, imagen audioreactiva e inteligencia artificial en colaboración con artista de Nueva York.</p>
+                <div class="enlaces">
+                    <a href="https://substack.com/home/post/p-163095273" target="_blank" class="btn-video">Ver proyecto</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/videoensayo-academico.png" alt="Videoensayo académico">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Investigación</span>
+                <h3>Videoensayo académico</h3>
+                <p><strong>Montaje audiovisual</strong> para el capítulo «13 secrets about memebreaking» de Gustavo Gómez-Mejía publicado en el <em>Critical Meme Reader III</em> (Institute of Network Cultures, Ámsterdam).</p>
+                <div class="enlaces">
+                    <a href="https://www.youtube.com/watch?v=FfSMMGt9m_c" target="_blank" class="btn-video">Ver videoensayo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/meme-distorsion.png" alt="MEME_DISTORSION">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">TouchDesigner + Datamoshing</span>
+                <h3>MEME_DISTORSION</h3>
+                <p>Distorsión glitch de memes utilizando <strong>blob tracking, datamoshing y delay machine</strong>. Producción integral: diseño sonoro, captura de movimiento y montaje experimental.</p>
+                <div class="enlaces">
+                    <a href="https://youtu.be/xrzSnIoQUzs" target="_blank" class="btn-video">Ver video</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/oniria-ai.png" alt="Cortometraje AI">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Stable Diffusion + Deforum</span>
+                <h3>Terradicación (Cortometraje AI)</h3>
+                <p>Narrativa visual generada completamente con <strong>IA generativa</strong>. Montaje en Premiere.</p>
+                <div class="enlaces">
+                    <a href="https://drive.google.com/file/d/1vrgLt0OOOuYrzb7AFaVAO379BZ32etqk/view" target="_blank" class="btn-video">Ver en Google Drive</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-imagen">
+                <img src="assets/img/pointcloud.png" alt="PUNTOS EN FUGACIDAD">
+            </div>
+            <div class="proyecto-contenido">
+                <span class="badge-ai">Point Clouds</span>
+                <h3>PUNTOS EN FUGACIDAD</h3>
+                <p>Serie de visualizaciones 3D usando <strong>pointcloud</strong>. Experimentos con captura volumétrica y reconstrucción espacial.</p>
+                <div class="enlaces">
+                    <a href="https://youtu.be/nzHznVT1HV4" target="_blank" class="btn-video">Parte 1</a>
+                    <a href="https://youtu.be/7OMX2QJ9H90" target="_blank" class="btn-video">Parte 2</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <h3>Contacto</h3>
-        <div class="contacto-info">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:antimemoriacolectivx@gmail.com">antimemoriacolectivx@gmail.com</a>
-        </div>
-        <div class="contacto-info">
-            <i class="fas fa-phone"></i>
-            <a href="tel:+5215626571695">+52 1 5626 5716 95</a>
-        </div>
-        <div class="contacto-info">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/antimemoria" target="_blank">antimemoria</a>
-        </div>
-        
-        <div class="redes-sociales">
-            <a href="https://www.instagram.com/antimemoria_____/" target="_blank" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <a href="mailto:antimemoriacolectivx@gmail.com">antimemoriacolectivx@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone contact-icon"></i>
+                <a href="tel:+5215626571695">+52 1 5626 5716 95</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-instagram contact-icon"></i>
+                <a href="https://www.instagram.com/antimemoria_____/" target="_blank">@antimemoria_____</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github contact-icon"></i>
+                <a href="https://github.com/antimemoria" target="_blank">antimemoria</a>
+            </div>
         </div>
     </footer>
 </body>
